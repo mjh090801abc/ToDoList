@@ -18,6 +18,5 @@ public class SecurityConfig {
                 .formLogin(form -> form.disable()); // 스프링 기본 로그인 폼 비활성화.
 
         return http.build();
-
     }
 }
