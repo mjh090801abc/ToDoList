@@ -20,7 +20,12 @@ class ToDoListApplicationTests {
 		ToDoEntity todo1 = new ToDoEntity();
 		todo1.setContent("밥먹기");
 		todo1.setCompleted(Boolean.TRUE);
-		toDoRepository.save(todo1);
+		this.toDoRepository.save(todo1);
+
+		ToDoEntity todo2 = new ToDoEntity();
+		todo2.setContent("스프링 공부하기");
+		todo2.setCompleted(Boolean.FALSE);
+		this.toDoRepository.save(todo2);
 	}
 
 }
